@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <hr>
+    <form action="#" method="POST">
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td><label>Full Name:</label></td>
+                <td><input type="text" name="student_name" placeholder="Enter your name" required></td>
+            </tr>
+            
+            <tr>
+                <td><label>Email ID:</label></td>
+                <td><input type="email" name="student_email" placeholder="example@gmail.com" required></td>
+            </tr>
+            
+            <tr>
+                <td><label>Phone Number:</label></td>
+                <td><input type="tel" name="student_phone" placeholder="10 digit number"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Date of Birth (DOB):</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Department:</label></td>
+                <td>
+                    <select name="department">
+                        <option value="">-- Select Department --</option>
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="ece">Electronics</option>
+                        <option value="me">Mechanical</option>
+                        <option value="ce">Civil</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" name="pass1" required></td>
+            </tr>
+            
+            <tr>
+                <td><label>Confirm Password:</label></td>
+                <td><input type="password" name="pass2" required></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>
+                    <br>
+                    <input type="submit" value="Submit Registration">
+                    <input type="reset" value="Clear Form">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+
+</body>
+</html>
